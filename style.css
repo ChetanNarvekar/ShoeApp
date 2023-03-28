@@ -225,16 +225,135 @@ header .logo{
     right: 3rem;
 }
 
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    background: #f9f9f9;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    padding: 2rem;
+}
 
+.service .box-container .box{
+    text-align: center;
+    flex: 1 1 30rem;
+}
 
+.service .box-container .box i{
+    font-size: 4rem;
+    color: orange;
+}
 
+.service .box-container .box h3{
+    font-size: 2rem;
+    color: black;
+    padding-top: 1rem;
+}
 
+.service .box-container .box{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
 
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: orange;
+}
 
+.heading span{
+    color:black
+}
 
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;   
+}
 
+.products .box-container .box{
+    border:1rem solid rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #f9f9f9;
+    flex:1 1 32rem; 
+}
 
+.products .box-container .box .content{
+    padding: 1.5rem;
+}
 
+.products .box-container .box img{
+    height:10rem;
+    transform: rotate(-35deg);
+    filter: drop-shadow(0.5rem 1rem rgba(0,0,0,.1));
+    margin: 8rem 2rem
+}
+
+.products .box-container .box:hover img{
+    transform: rotate(-35deg) scale(1.2);
+}
+
+.products .box-container .box .icons{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: .5rem;
+    left: -10rem;
+}
+
+.products .box-container .box:hover .icons{
+    left: 1rem;
+} 
+
+.products .box-container .box .icons a{
+    height:4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: black;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    background: #fff;
+    margin-top: .5rem;
+    padding-left: 0;
+}
+
+.products .box-container .box .icons a:hover{
+    background: orange;
+    color:#fff
+}
+
+.products .box-container .box .content h3{
+     color: black;
+     font-size: 2.5rem;
+}
+
+.products .box-container .box .content .price{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.products .box-container .box .content .price span{
+    color: orange;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.products .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: orange;
+}
 
 
 
@@ -256,6 +375,10 @@ header .logo{
 
     header{
         padding:2rem
+    }
+
+    section{
+        padding-top: 0px
     }
 }
 
@@ -288,6 +411,14 @@ header .logo{
         text-align: center;
     }
 
+    .home .slide-container .slide .image .text{
+        width: 60%;
+    }
+
+    .home #prev, .home #next{
+        top: 85%;
+    }
+
 }
 
 
@@ -298,5 +429,13 @@ header .logo{
 
     header{
         padding:2rem
+    }
+
+    .home .slide-container .slide .image{
+        padding-bottom: 6rem;
+    }
+
+    .heading{
+        font-size: 3rem;
     }
 }
